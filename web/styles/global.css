@@ -1,0 +1,36 @@
+:root {
+  --primary-color: #21213d;
+  --secondary-color: #f8f8ff;
+
+  --pad-sm: 5px;
+  --pad-md: 10px;
+  --pad-lg: 15px;
+  --pad-xl: 20px;
+
+  --rad-sm: 5px;
+  --rad-md: 10px;
+  --rad-lg: 15px;
+  --rad-xl: 20px;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: var(--pad-md);
+  background-color: var(--secondary-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: var(--pad-lg);
+  border-radius: var(--rad-sm);
+}
+
+.page-title {
+  text-align: center;
+  color: var(--secondary-color);
+}

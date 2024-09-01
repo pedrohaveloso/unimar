@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valdir | Listagem</title>
+
+    <link rel="stylesheet" href="./styles/global.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="page-title">
+        <h1>Listagem de professores</h1>
+      </div>
+    </header>
+
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Registro</th>
+            <th>Nome completo</th>
+            <th>CPF</th>
+            <th>E-mail institucional</th>
+            <th>E-mail de contato</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody id="professors-table">
+          <tr>
+            <td colspan="5">Carregando</td>
+          </tr>
+
+          <script src="./scripts/professors-table.js"></script>
+        </tbody>
+      </table>
+    </main>
+
+    <div class="actions">
+      <a href="./add.html">Adicionar</a>
+    </div>
+  </body>
+</html>
