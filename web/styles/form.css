@@ -1,0 +1,23 @@
+form {
+  display: flex;
+  gap: var(--gap-xl);
+
+  &.column {
+    flex-direction: column;
+  }
+
+  fieldset {
+    display: flex;
+    gap: var(--gap-lg);
+    padding: var(--pad-lg);
+
+    &.column {
+      flex-direction: column;
+    }
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+}

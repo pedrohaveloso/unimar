@@ -1,11 +1,17 @@
 :root {
-  --primary-color: #21213d;
-  --secondary-color: #c8c8e6;
-
-  --on-primary-color: #fbfbff;
-  --on-secondary-color: #14141f;
-
-  --accent-color: #3c3c9c;
+  --white: #ffffff;
+  --indigo-50: #eef2ff;
+  --indigo-100: #e0e7ff;
+  --indigo-200: #c7d2fe;
+  --indigo-300: #a5b4fc;
+  --indigo-400: #818cf8;
+  --indigo-500: #6366f1;
+  --indigo-600: #4f46e5;
+  --indigo-700: #4338ca;
+  --indigo-800: #3730a3;
+  --indigo-900: #312e81;
+  --indigo-950: #1e1b4b;
+  --black: #000000;
 
   --pad-sm: 5px;
   --pad-md: 10px;
@@ -29,8 +35,13 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: var(--pad-md);
+  background-color: var(--white);
 
   display: flex;
   flex-direction: column;
@@ -38,7 +49,7 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--indigo-950);
   text-decoration: none;
 
   &:hover {
@@ -48,18 +59,27 @@ a {
 }
 
 header {
-  background-color: var(--primary-color);
   padding: var(--pad-lg);
-  border-radius: var(--rad-md);
 }
 
 .page-title {
-  text-align: center;
-  color: var(--on-primary-color);
+  text-align: start;
+  color: var(--black);
+
+  @media (width <=1000px) {
+    text-align: center;
+  }
 
   h1 {
     font-size: 1rem;
-    font-size: clamp(1rem, 4vw, 2rem);
+    font-size: clamp(1rem, 4vw, 1.5rem);
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 4vw, 1rem);
+    font-style: italic;
+    font-weight: 500;
   }
 }
 
@@ -67,18 +87,21 @@ main {
   padding: var(--pad-xl);
 }
 
-footer {
-  background-color: var(--secondary-color);
-  padding: var(--pad-lg);
-  border-radius: var(--rad-md);
+body:has(.actions) {
+  margin-bottom: 60px;
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: end;
+.actions {
+  position: fixed;
+  right: var(--pad-lg);
+  bottom: var(--pad-lg);
 
-  a,
-  p {
-    color: var(--on-secondary-color);
+  width: 100%;
+  max-width: calc(100% - var(--pad-md) * 2);
+
+  .actions__items {
+    float: right;
+    display: flex;
   }
 }
 
@@ -100,13 +123,13 @@ button {
   /* --- Variants ----------------------------------------------------------- */
 
   &.primary {
-    background-color: var(--primary-color);
-    color: var(--on-primary-color);
+    background-color: var(--indigo-800);
+    color: var(--white);
   }
 
   &.secondary {
-    background-color: var(--secondary-color);
-    color: var(--on-secondary-color);
+    background-color: var(--indigo-50);
+    color: var(--black);
   }
 
   /* --- With icons --------------------------------------------------------- */
@@ -117,27 +140,12 @@ button {
   }
 }
 
-table {
-  @media (width <= 1000px) {
-    thead {
-      display: none;
-    }
-
-    tr {
-      display: flex;
-      flex-direction: column;
-      padding: var(--pad-md);
-    }
-
-    td::before {
-      content: attr(data-label) ": ";
-      font-weight: 700;
-    }
-  }
-}
-
 .content {
   display: flex;
+
+  & > * {
+    max-width: 1400px;
+  }
 
   &.center {
     align-items: center;

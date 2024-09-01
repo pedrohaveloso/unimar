@@ -1,9 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Listagem de professores" />
+    <title>Valdir | Adicionar</title>
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <div class="page-title">
+        <h1>Gerenciador de professores</h1>
+        <h2>Adicionar</h2>
+      </div>
+    </header>
+
+    <main>
+      <div class="content center">
+        <form name="add-professor" action="/" method="post" class="column">
+          <fieldset>
+            <legend>Dados gerais</legend>
+
+            <label for="username" class="field">
+              <span>Nome completo</span>
+              <input required type="text" name="username" id="username" />
+            </label>
+
+            <label for="contact-email" class="field">
+              <span>E-mail de contato</span>
+              <input
+                required
+                type="email"
+                name="contact_email"
+                id="contact-email"
+              />
+            </label>
+
+            <label for="document" class="field">
+              <span>CPF</span>
+              <input
+                required
+                type="text"
+                name="document"
+                id="document"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                title="Digite no formato: XXX.XXX.XXX-XX."
+              />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dados institucionais</legend>
+
+            <label for="email" class="field">
+              <span>E-mail institucional</span>
+              <input required type="email" name="email" id="email" />
+            </label>
+          </fieldset>
+
+          <div class="field">
+            <button type="submit" class="primary">Adicionar</button>
+          </div>
+        </form>
+
+        <script type="module" src="./scripts/add-professor-form.js"></script>
+      </div>
+    </main>
+
+    <div class="actions">
+      <div class="actions__items">
+        <a href="./index.html">
+          <button type="button" class="primary">Listar professores</button>
+        </a>
+      </div>
+    </div>
+  </body>
 </html>

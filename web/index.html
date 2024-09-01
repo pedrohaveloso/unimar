@@ -7,12 +7,14 @@
     <title>Valdir | Listagem</title>
 
     <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/table.css" />
   </head>
 
   <body>
     <header>
       <div class="page-title">
-        <h1>Listagem de professores</h1>
+        <h1>Gerenciador de professores</h1>
+        <h2>Listagem</h2>
       </div>
     </header>
 
@@ -32,7 +34,7 @@
 
           <tbody id="professors-table">
             <tr>
-              <td colspan="5">Carregando</td>
+              <td colspan="100%" style="text-align: center">Carregando...</td>
             </tr>
 
             <script type="module" src="./scripts/professors-table.js"></script>
@@ -41,14 +43,14 @@
       </div>
     </main>
 
-    <footer>
-      <div class="actions">
+    <div class="actions">
+      <div class="actions__items">
         <a href="./add.html">
           <button type="button" class="primary icon-add">
             Adicionar professor
           </button>
         </a>
       </div>
-    </footer>
+    </div>
   </body>
 </html>
