@@ -116,3 +116,31 @@ button {
     padding-left: var(--pad-md);
   }
 }
+
+table {
+  @media (width <= 1000px) {
+    thead {
+      display: none;
+    }
+
+    tr {
+      display: flex;
+      flex-direction: column;
+      padding: var(--pad-md);
+    }
+
+    td::before {
+      content: attr(data-label) ": ";
+      font-weight: 700;
+    }
+  }
+}
+
+.content {
+  display: flex;
+
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+}

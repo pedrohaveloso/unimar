@@ -9,12 +9,12 @@
     .map((professor) => {
       return `
         <tr>
-          <td>${professor["id"]}</td>
-          <td>${professor["name"]}</td>
-          <td>${professor["document"]}</td>
-          <td>${professor["email"]}</td>
-          <td>${professor["contact_email"]}</td>
-          <td>
+          <td data-label="Registro">${professor["id"]}</td>
+          <td data-label="Nome completo">${professor["name"]}</td>
+          <td data-label="CPF">${professor["document"]}</td>
+          <td data-label="E-mail institucional">${professor["email"]}</td>
+          <td data-label="E-mail de contato">${professor["contact_email"]}</td>
+          <td data-label="Ações">
             <a href="#">Alterar</a>
             <a href="#">Excluir</a>
           </td>
