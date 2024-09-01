@@ -1,6 +1,11 @@
 :root {
   --primary-color: #21213d;
-  --secondary-color: #f8f8ff;
+  --secondary-color: #c8c8e6;
+
+  --on-primary-color: #fbfbff;
+  --on-secondary-color: #14141f;
+
+  --accent-color: #3c3c9c;
 
   --pad-sm: 5px;
   --pad-md: 10px;
@@ -21,8 +26,21 @@
 
 body {
   padding: var(--pad-md);
-  background-color: var(--secondary-color);
 }
+
+/* --- Anchor styles ---------------------------------------------------------*/
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+    transition: all 500ms;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
 
 header {
   background-color: var(--primary-color);
@@ -32,5 +50,64 @@ header {
 
 .page-title {
   text-align: center;
-  color: var(--secondary-color);
+  color: var(--on-primary-color);
+
+  h1 {
+    font-size: 1rem;
+    font-size: clamp(1rem, 4vw, 2rem);
+  }
+}
+
+main {
+  padding: var(--pad-xl);
+}
+
+footer {
+  background-color: var(--secondary-color);
+  padding: var(--pad-lg);
+  border-radius: var(--rad-sm);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a,
+  p {
+    color: var(--on-secondary-color);
+  }
+}
+
+button {
+  border: none;
+  padding: var(--pad-md) var(--pad-xl);
+  border-radius: var(--rad-sm);
+
+  font-weight: 700;
+  font-size: 0.9rem;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    transition: all 500ms;
+  }
+
+  /* --- Variants ----------------------------------------------------------- */
+
+  &.primary {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+  }
+
+  &.secondary {
+    background-color: var(--secondary-color);
+    color: var(--on-secondary-color);
+  }
+
+  /* --- With icons --------------------------------------------------------- */
+
+  &.icon-add::after {
+    content: "+";
+    padding-left: var(--pad-md);
+  }
 }

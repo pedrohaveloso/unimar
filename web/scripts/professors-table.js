@@ -25,13 +25,14 @@
 
   /**
    * @typedef {{
-   *    id:string; name:string; document:string; email:string; contact_email:string
+   *    id:string; name:string; document:string; email:string;
+   *    contact_email:string
    * }} Professor
    */
 
   /** @return {Promise<Professor[]>} */
   async function getProfessors() {
-    // poderia ser um fetch, hein... mas só um object[] bruto:
+    // poderia ser um fetch, hein... mas só um [object] bruto:
 
     return [
       {
