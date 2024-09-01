@@ -16,6 +16,11 @@
   --rad-md: 10px;
   --rad-lg: 15px;
   --rad-xl: 20px;
+
+  --gap-sm: 5px;
+  --gap-md: 10px;
+  --gap-lg: 15px;
+  --gap-xl: 20px;
 }
 
 * {
@@ -26,26 +31,26 @@
 
 body {
   padding: var(--pad-md);
-}
 
-/* --- Anchor styles ---------------------------------------------------------*/
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}
 
 a {
   color: var(--accent-color);
   text-decoration: none;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.9;
     transition: all 500ms;
   }
 }
 
-/* -------------------------------------------------------------------------- */
-
 header {
   background-color: var(--primary-color);
   padding: var(--pad-lg);
-  border-radius: var(--rad-sm);
+  border-radius: var(--rad-md);
 }
 
 .page-title {
@@ -65,11 +70,11 @@ main {
 footer {
   background-color: var(--secondary-color);
   padding: var(--pad-lg);
-  border-radius: var(--rad-sm);
+  border-radius: var(--rad-md);
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 
   a,
   p {
@@ -88,7 +93,7 @@ button {
   cursor: pointer;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.9;
     transition: all 500ms;
   }
 
