@@ -11,13 +11,28 @@ form {
     gap: var(--gap-lg);
     padding: var(--pad-lg);
 
+    border-radius: var(--rad-sm);
+    border: solid 1px var(--indigo-800);
+
     &.column {
       flex-direction: column;
+    }
+
+    legend {
+      color: var(--indigo-800);
     }
   }
 
   .field {
     display: flex;
     flex-direction: column;
+    gap: var(--gap-sm);
+  }
+
+  input {
+    border-radius: var(--rad-sm);
+    border: none;
+    background-color: var(--indigo-50);
+    padding: var(--pad-sm) var(--pad-lg);
   }
 }
