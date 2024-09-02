@@ -93,14 +93,13 @@ body:has(.actions) {
 
 .actions {
   position: fixed;
-  right: var(--pad-lg);
+  left: var(--pad-lg);
   bottom: var(--pad-lg);
 
   width: 100%;
   max-width: calc(100% - var(--pad-md) * 2);
 
   .actions__items {
-    float: right;
     display: flex;
   }
 }
