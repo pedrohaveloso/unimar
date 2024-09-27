@@ -192,3 +192,21 @@
     }
   }
 }
+
+#contact-section {
+  width: 100%;
+
+  > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+
+    > h2 {
+      text-align: center;
+      color: var(--blue-950);
+    }
+  }
+}

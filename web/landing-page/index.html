@@ -461,8 +461,6 @@
 
       <hr />
 
-      <section id="about-section"></section>
-
       <section class="content-banner">
         <h2>Aumente a precisão dos seus preços e dobre seus lucros.</h2>
 
@@ -471,6 +469,38 @@
         <a href="./404.html">
           <button type="button" class="light medium">Comece agora</button>
         </a>
+      </section>
+
+      <hr />
+
+      <section id="contact-section" class="container">
+        <form action="./index.html" method="post">
+          <h2>Entre em contato</h2>
+
+          <label for="username">
+            Nome
+            <input
+              type="text"
+              id="username"
+              name="username"
+              maxlength="255"
+              minlength="1"
+              required
+            />
+          </label>
+
+          <label for="email">
+            E-mail
+            <input type="email" id="email" name="email" required />
+          </label>
+
+          <label for="message">
+            Mensagem
+            <textarea name="message" id="message"></textarea>
+          </label>
+
+          <button type="submit" class="primary full">Enviar</button>
+        </form>
       </section>
     </main>
 
