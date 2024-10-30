@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Jo\u00e3o Figueira",
+    "birth": "1997-10-30",
+    "resume": "https://joaofigueiredo.com.br",
+    "linkedIn": "https://linkedin.com/in/joao-figueiredo"
+  },
+  {
+    "name": "Maria Silva",
+    "birth": "1994-10-30",
+    "resume": "https://mariasilva.com.br",
+    "linkedIn": "https://linkedin.com/in/maria-silva"
+  },
+  {
+    "name": "Pedro Oliveira",
+    "birth": "1989-10-30",
+    "resume": "https://pedrooliveira.com",
+    "linkedIn": "https://linkedin.com/in/pedro-oliveira"
+  },
+  {
+    "name": "Ana Souza",
+    "birth": "1996-10-30",
+    "resume": "https://anasouza.dev",
+    "linkedIn": "https://linkedin.com/in/ana-souza"
+  },
+  {
+    "name": "Carlos Pereira",
+    "birth": "1992-10-30",
+    "resume": "https://carlospereira.io",
+    "linkedIn": "https://linkedin.com/in/carlos-pereira"
+  },
+  {
+    "name": "Fernanda Costa",
+    "birth": "1995-10-30",
+    "resume": "https://fernandacosta.com.br",
+    "linkedIn": "https://linkedin.com/in/fernanda-costa"
+  },
+  {
+    "name": "Bruno Lima",
+    "birth": "1990-10-30",
+    "resume": "https://brunolima.dev",
+    "linkedIn": "https://linkedin.com/in/bruno-lima"
+  },
+  {
+    "name": "Patricia Almeida",
+    "birth": "1998-10-30",
+    "resume": "https://patriciaalmeida.com",
+    "linkedIn": "https://linkedin.com/in/patricia-almeida"
+  },
+  {
+    "name": "Gabriel Santos",
+    "birth": "1993-10-30",
+    "resume": "https://gabrielsantos.dev",
+    "linkedIn": "https://linkedin.com/in/gabriel-santos"
+  },
+  {
+    "name": "Juliana Machado",
+    "birth": "1995-10-30",
+    "resume": "https://julianamachado.com.br",
+    "linkedIn": "https://linkedin.com/in/juliana-machado"
+  }
+]
